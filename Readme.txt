@@ -1,5 +1,4 @@
-This script was created in order to obtain specific region data for single cell test files. This is a function baked into ENCODE for bulk ATAC/DNase-seq data
-but is not available as a standalone function compatible to be slotted into custom single cell scATAC-seq analysis pipelines. The goal is to isolate that function and make it generally agnostic to up- or downstream processing steps.
+This script was created in order to obtain specific region data for single cell test files. This is a function baked into ENCODE for bulk ATAC/DNase-seq data but is not available as a standalone function compatible to be slotted into custom single cell scATAC-seq analysis pipelines. The goal is to isolate that function and make it generally agnostic to up- or downstream processing steps.
 It also allows for this step to run quickly and efficiently as a quick quality check.
 
 How it works: 
