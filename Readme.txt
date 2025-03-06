@@ -1,4 +1,4 @@
-This script was created in order to obtain specific region data for single cell test files. This is a function baked into ENCODE for bulk ATAC/DNase-seq data but is not available as a standalone function compatible to be slotted into custom single cell scATAC-seq analysis pipelines. The goal is to isolate that function and make it generally agnostic to up- or downstream processing steps.
+This script was created in order to obtain specific region data for single cell test files. This is a function baked into ENCODE for bulk ATAC-seq data but is not available as a standalone function compatible to be slotted into custom single cell scATAC-seq analysis pipelines. The goal is to isolate that function and make it generally agnostic to up- or downstream processing steps.
 It also allows for this step to run quickly and efficiently as a quick quality check.
 
 How it works: 
@@ -31,6 +31,10 @@ New or alternate reference files can be used, simply add to ref folder and save 
 
 Script Usage directions:
 python --input [test file (bed format)] --genome [species/genome ID, either hg38 or mm10 by default] --ref [reference folder, default: ./ref]
+
+Testing initial installation, use the debug function (any specified other arguments will work in this case, be sure to remove debug option otherwise): 
+python --input [test file (bed format)] --genome [species/genome ID, either hg38 or mm10 by default] --ref [reference folder, default: ./ref] --debug True
+
 example:
 python --input test_file.bed --genome hg38 --ref ./ref
 
