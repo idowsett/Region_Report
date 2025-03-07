@@ -1,8 +1,8 @@
-This script was created in order to obtain specific region data for single cell test files. This is a function baked into ENCODE for bulk ATAC-seq data but is not available as a standalone function compatible to be slotted into custom single cell scATAC-seq analysis pipelines. The goal is to isolate that function and make it generally agnostic to up- or downstream processing steps.
+This scripts goal is to provide specific region data for single cell test files. This is a function baked into ENCODE for bulk ATAC-seq data but is not available as a standalone function compatible to be slotted into custom single cell scATAC-seq analysis pipelines. The goal is to isolate that function and make it generally agnostic to up- or downstream processing steps.
 It also allows for this step to run quickly and efficiently as a quick quality check.
 
 How it works: 
-The script targets specific regions of interest (enhancer, promoter, ENCODE blacklist and TSS regions) and reports how many reads in user sequencing data (from a processed BED fileor tsv file) overlap these regions.
+The script targets specific regions of interest (enhancer, promoter, ENCODE blacklist and TSS regions) and reports how many reads in user sequencing data (from a processed BED file or tsv file) overlap these regions.
 
 Reference files pulled from the ENCODE project:
 https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/scripts/download_genome_data.sh
